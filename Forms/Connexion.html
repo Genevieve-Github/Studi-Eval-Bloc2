@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <title>AssurePlus</title>
+</head>
+<!-- Image de fond d'écran -->
+<body style="background-image: url('/images/Voies.png');">;
+<!-- Entete -->
+<header>
+    <img class="img-fluid" src="/Images/logo_fond_noir_reduite.png" alt="" style="width: 100%; padding-bottom: 20px;">
+    <nav class="navbar navbar-expand-lg bg-light">
+       <div class="container-fluid">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active"  >
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/index.html">Accueil</a>         
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Connexion.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Garagiste.html">Dépannage véhicule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/MentionsLegales.html">Mentions légales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Cookies.html">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid" >
+    <form class="bg-light mt-3">
+        <h2 class="ms-2" style="color: orangered;">Connexion</h2>
+<!-- Texte de vigilance -->
+        <div class="ms-2 me-2">
+            <div class="textVigilance justify-content-center text-bg-danger">
+                Vigilance : des appels au nom d'AssurePlus sont observés dans le but d’obtenir vos
+                données personnelles. Si cela vous arrive, ne répondez pas et restez vigilant.
+                Il s'agit d'une tentative de fraude pour récupérer vos informations personnelles.
+            </div>
+<!-- Page de connexion -->
+            <div class="col ms-0 me-2 p-4">
+                <label for="email" class="form-label">Votre adresse e-mail</label>
+                <input type="email" class="form-control" id="email" placeholder="">
+                <div class="col">
+                    <label for="password" class="form-label">Mot de passe</label>
+                    <input type="password" name="password" class="form-control" id="password" placeholder="">
+                </div>
+            </div>
+            <div class="row p-2">
+                <div>
+                    <button type="button" onclick="appelFormulaireCookies()" id="connexion" 
+                    class="btn btn-success justify-content-center mx-auto d-block text-center">Connexion</button>
+                </div>
+            </div>
+            <div class="form-check form-switch ms-2 me-2">
+                <label class="form-check-label py-3" for="idCheck">Mot de passe oublié (envoi d'un mail de réinitialisation)</label>
+                <input type="checkbox" class="form-check-input p-2" id="idCheck">
+            </div>
+        </div>
+<!-- Pour une première connexion -->
+        <div class="container-fluid ms-0 me-2 py-2 p-2" style="border-style: ridge">
+            <div class="row">
+                <div class="text fw-bold">
+                    Vous n'avez pas encore de compte?
+                </div>
+            </div>
+            <div class="row p-2">
+                <div>
+                    <button type="submit" onclick="retourPageConnexion()" id="connexionFirst"
+                            class="btn btn-primary mx-auto justify-content-center d-block text-center">Première connexion</button>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script src="/Assets/js/script.js"></script>
+</body>
+</html> 

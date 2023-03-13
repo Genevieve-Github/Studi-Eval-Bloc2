@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Assets/css/style.css">
+    <link rel="import" href="/Forms/HeaderForm.html">
+    <title>Page 1</title>
+</head>
+<!-- Image de fond d'écran -->
+<body style="background-image: url('//Images/Voies.png') background-repeat: no-repeat;">
+<!-- Entete -->
+<header>
+    <img class="img-fluid" src="/Images/logo_fond_noir_reduite.png" alt="Logo AssurePlus" style="width: 100%; padding-bottom: 20px;">
+    <nav class="navbar navbar-expand-lg bg-light">
+       <div class="container-fluid">
+            <a class="navbar-brand text-uppercase fw-bold" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active"  >
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/index.html">Accueil</a>         
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Connexion.html">Connexion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Garagiste.html">Dépannage véhicule</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/MentionsLegales.html">Mentions légales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase fw-bold" style="color:  orangered;" href="/Forms/Cookies.html">Cookies</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<br>
+<div class="container-fluid" >
+    <form class="bg-light mt-3 ms-0">
+        <h2 class="ms-2" style="color: orangered;">Trouvez votre dépanneur</h2>
+        <div class="col ms-0 me-2 p-2">
+        <!-- 
+            <label for="adresse">Saisisez votre position :</label>
+            <textarea name="adresse" id="adresse"></textarea>
+            <br>
+            <div id="selection" style="display: none;">
+            </div>
+                   
+            <label for="resAdresse">Adresse :</label>
+            <input type="text" id="resAdresse" disabled>
+            <label for="CP">Code Postal :</label>
+            <input type="text" id="CP" disabled>
+            <label for="Ville">Ville :</label>
+            <input type="text" id="Ville" disabled>
+        -->
+
+            <div class="panel">
+                <div class="test">
+                    <label for="adresse">Saisisez votre adresse :</label>
+                    <textarea name="adresse" id="adresse" rows="3"></textarea>
+                    <div id="selection" style="display: none;" class="dropdown">
+                    </div>
+                </div>
+                <div class="sep"></div>
+                <label for="resAdresse">Adresse :</label>
+                <input type="text" id="resAdresse" disabled>
+                <label for="CP">Code Postal :</label>
+                <input type="text" id="CP" disabled>
+                <label for="Ville">Ville :</label>
+                <input type="text" id="Ville" disabled>
+              
+            
+                </div>
+
+            </div>
+
+
+
+
+            <!-- Texte --> 
+<!--     <iframe id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="300"
+        height="200"
+        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
+        <br>
+        <br>
+        <iframe id="inlineFrameExample"
+        title="Inline Frame Example"
+        width="300"
+        height="200"
+        src="https://www.pagesjaunes.fr/annuaire/chercherlespros?quoiqui=garagiste&ou=Ambilly&univers=pagesjaunes&idOu=">
+        <br>
+        -->
+        <br>
+        <!--
+
+        <iframe style="width: 100%; padding-bottom: 20px;" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11039.524977032266!2d6.023475448827111!3d46.23270628175876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1678720012873!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <br>
+            <iframe src="https://maps.apple.com/?address=1,Infinite+Loop,Soissons,France"></iframe>
+            <iframe src="https://www.pagesjaunes.fr/annuaire/chercherlespros?quoiqui=garagiste&ou=Ambilly+%2874100%29&univers=pagesjaunes&idOu=L07400800"></iframe>
+            <iframe src="https://www.data.gouv.fr/fr/reuses/lannuaire-des-entreprises/" frameborder="0"></iframe>
+
+            <iframe src="https://www.data.gouv.fr/fr/reuses/ici/" frameborder="0"></iframe>
+        -->
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var requestURL = 'https://api-adresse.data.gouv.fr/searchs/?q=';
+        var select = document.getElementById("selection");
+        window.onload = function() {
+            document.getElementById("adresse").addEventListener("input", autocompleteAdresse, false);
+        };
+        function displaySelection(response) {
+            if (Object.keys(response.features).length > 0) {
+                select.style.display = "block";
+                select.removeChild(select.firstChild);
+                var ul = document.createElement('ul');
+                select.appendChild(ul);
+                response.features.forEach(function (element) {
+                    var li = document.createElement('li');
+                    var ligneAdresse = document.createElement('span');
+                    var infosAdresse = document.createTextNode(element.properties.postcode + ' ' + element.properties.city);
+                    ligneAdresse.innerHTML = element.properties.name;
+                    li.onclick = function () { selectAdresse(element); };
+                    li.appendChild(ligneAdresse);
+                    li.appendChild(infosAdresse);
+                    ul.appendChild(li);
+                });
+            } else {
+                select.style.display = "none";
+            }
+        }
+        function autocompleteAdresse() {
+            var inputValue = document.getElementById("adresse").value;
+            if (inputValue) {
+                fetch(setQuery(inputValue))
+                    .then(function (response) {
+                        response.json().then(function (data) {
+                            displaySelection(data);
+                        });
+                    });
+            } else {
+                select.style.display = "none";
+            }
+        }
+        function selectAdresse(element) {
+            document.getElementById("adresse").value = element.properties.name + "\r\n" + element.properties.postcode + " " + element.properties.city;
+            select.style.display = "none";
+            document.getElementById("resAdresse").value = element.properties.name;
+            document.getElementById("CP").value = element.properties.postcode;
+            document.getElementById("Ville").value = element.properties.city;
+        }
+        function setQuery(value) {
+            return requestURL + value + "?type=housenumber&autocomplete=1";
+        }
+    </script>
+</body>
+</html>
